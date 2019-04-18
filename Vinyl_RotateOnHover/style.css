@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+      body {
+  padding: 4em;
+  
+background: url(bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+}
+p{
+  text-align:center;
+  font-size:30px;
+  font-family:arial;
+  color: white;
+  padding:10px;
+  width:400px;
+  margin: auto;
+  webkit-box-shadow: 5px 5px 33px 7px #000000; 
+box-shadow: 5px 5px 33px 7px #000000;
+font-family: 'Press Start 2P', cursive;
+background: #44A08D;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #093637, #44A08D);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #093637, #44A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+}
+
+.wrap {
+  width: 300px;
+  margin: auto;
+  z-index: 1;
+  padding:30px;
+}
+
+#vinyl {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  background: url("v2.png") top center no-repeat;
+  animation: spin 4s linear infinite;
+  /*Set our animation play state to paused initially */
+  animation-play-state: paused;
+}
+
+#vinyl:hover {
+  /* Toggle our animation play state to running when we are hovering over our sticker */
+  animation-play-state: running;
+  border: solid white 1px;
+  border-radius:100%;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+.ij-pointer {
+	cursor:url(v2.png), auto;
+	}

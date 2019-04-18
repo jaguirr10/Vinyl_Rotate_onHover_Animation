@@ -1,0 +1,50 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Vinyl rotate on hover + sound</title>
+<style>
+
+
+    </style>
+
+
+</head>
+<body translate="no">
+<link href='https://fonts.googleapis.com/css?family=Bree+Serif' rel='stylesheet' type='text/css'>
+<p>Hover the record for some exquisite sound </p>
+<div class="wrap">
+<div id="vinyl" class="ij-pointer" onmouseover="PlaySound('mySound')" onmouseout="StopSound('mySound')">
+</div>
+</div>
+<audio id='mySound' src="Track1.mp3" />
+
+
+<script id="rendered-js">
+
+// Juan Aguirre
+
+      function PlaySound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.play();
+}
+
+function StopSound(soundobj) {
+  var thissound = document.getElementById(soundobj);
+  thissound.pause();
+  thissound.currentTime = 10;
+}
+      
+    </script>
+
+</body>
+</html>
+
